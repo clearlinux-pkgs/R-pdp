@@ -4,24 +4,22 @@
 #
 Name     : R-pdp
 Version  : 0.7.0
-Release  : 1
+Release  : 2
 URL      : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Summary  : Partial Dependence Plots
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-pdp-lib
-Requires: R-ICEbox
-Requires: R-gbm
-Requires: R-ggplot2
-Requires: R-mlbench
-Requires: R-plyr
-Requires: R-viridis
+Requires: R-caret
+Requires: R-progress
 BuildRequires : R-ICEbox
+BuildRequires : R-caret
 BuildRequires : R-gbm
 BuildRequires : R-ggplot2
 BuildRequires : R-mlbench
 BuildRequires : R-plyr
+BuildRequires : R-progress
 BuildRequires : R-viridis
 BuildRequires : buildreq-R
 
@@ -44,11 +42,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1536978034
+export SOURCE_DATE_EPOCH=1536978894
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1536978034
+export SOURCE_DATE_EPOCH=1536978894
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "

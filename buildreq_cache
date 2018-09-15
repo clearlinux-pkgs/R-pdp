@@ -1,7 +1,9 @@
 0.7.0
 R-ICEbox
+R-caret
 R-gbm
 R-ggplot2
 R-mlbench
 R-plyr
+R-progress
 R-viridis
