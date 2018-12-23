@@ -4,7 +4,7 @@
 #
 Name     : R-pdp
 Version  : 0.7.0
-Release  : 2
+Release  : 3
 URL      : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Summary  : Partial Dependence Plots
