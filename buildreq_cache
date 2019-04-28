@@ -3,6 +3,7 @@ R-ICEbox
 R-caret
 R-gbm
 R-ggplot2
+R-gridExtra
 R-mlbench
 R-plyr
 R-progress
