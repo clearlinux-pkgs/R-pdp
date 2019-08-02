@@ -1,10 +1,7 @@
 0.7.0
 R-ICEbox
 R-caret
+R-foreach
 R-gbm
-R-ggplot2
-R-gridExtra
 R-mlbench
-R-plyr
 R-progress
-R-viridis
