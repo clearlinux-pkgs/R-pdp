@@ -4,34 +4,22 @@
 #
 Name     : R-pdp
 Version  : 0.7.0
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/pdp_0.7.0.tar.gz
 Summary  : Partial Dependence Plots
 Group    : Development/Tools
 License  : GPL-2.0+
 Requires: R-pdp-lib = %{version}-%{release}
-Requires: R-ICEbox
-Requires: R-caret
-Requires: R-foreach
-Requires: R-gbm
 Requires: R-ggplot2
 Requires: R-gridExtra
 Requires: R-magrittr
-Requires: R-mlbench
 Requires: R-plyr
-Requires: R-progress
 Requires: R-viridis
-BuildRequires : R-ICEbox
-BuildRequires : R-caret
-BuildRequires : R-foreach
-BuildRequires : R-gbm
 BuildRequires : R-ggplot2
 BuildRequires : R-gridExtra
 BuildRequires : R-magrittr
-BuildRequires : R-mlbench
 BuildRequires : R-plyr
-BuildRequires : R-progress
 BuildRequires : R-viridis
 BuildRequires : buildreq-R
 
@@ -49,21 +37,22 @@ lib components for the R-pdp package.
 
 %prep
 %setup -q -c -n pdp
+cd %{_builddir}/pdp
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1564707622
+export SOURCE_DATE_EPOCH=1589785661
 
 %install
-export SOURCE_DATE_EPOCH=1564707622
+export SOURCE_DATE_EPOCH=1589785661
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
