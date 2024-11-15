@@ -1,5 +1,5 @@
 PKG_NAME := R-pdp
-URL = https://cran.r-project.org/src/contrib/pdp_0.8.1.tar.gz
+URL = https://ftp.osuosl.org/pub/cran/src/contrib/pdp_0.8.2.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
